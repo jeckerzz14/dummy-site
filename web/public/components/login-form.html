@@ -1,0 +1,56 @@
+ <div class="container">           
+    <div class="box">
+        <div id="alert-message"></div>
+
+        <form action="/login" method="POST" id="loginForm">
+            <div class="input-group">
+                <div class="field-container">
+                    <label for="input-field">USERNAME</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="field-container">
+                    <label for="input-field">PASSWORD</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-danger">Sign in</button>
+                    <a href="#" class="text-link">Forget Password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="links-container">
+        <a href="#" class="text-link">Privacy</a>
+        <a href="#" class="text-link">Terms</a>
+    </div>
+</div>
+
+<style scoped>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .links-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 48px;
+            align-items: center;
+
+            a {
+                padding-left: 1.25rem;
+            }
+        }
+    }
+
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: .5rem;
+    }
+</style>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/css/global.css">
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <!-- CONTENT -->
+        <main id="app">
+            <!-- HEADER -->
+            <header>
+                <h1>Dummy</h1>
+                <section class="menu">
+                    <a href="#">Service</a>
+                    <a href="#">About Us</a>
+                    <a href="#">News</a>
+                    <a href="#">Contact</a>
+                    <a href="/" class="active">Sign in</a>
+                </section>
+
+                <img src="public/assets/icons/burger-menu.svg" alt="menu icon" class="burger-menu" width="30" height="30">
+            </header>
+
+            <!-- HERO -->
+            <section class="hero-section">
+                <img src="public/assets/images/header.jpg" alt="Office setup with laptops" width="100%" height="200">
+                <div class="overlay-text">Dashboard</div>
+            </section>
+
+            <!-- CONTENT -->
+            <section id="main-content">
+                <div class="box">
+                    <div id="alert-message">
+                        <span>Login Succeed</span>
+                    </div>
+                    <button type="submit" class="btn-danger" id="btn-sign-out">Sign out</button>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <section class="footer">
+                <h2>Dummy</h2>
+                <small class="copyright">&copy; Dummy.</small>
+            </section>
+        </main>
+    </body>
+</html>
+
+<style scoped>
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #alert-message {
+        display: flex;
+        border-color: 1px solid #C3E6CB;
+        background-color: #D4EDDA;
+        height: 42px;
+        border-radius: 4px;
+        align-items: center;
+        padding: 12px;
+        margin: 1rem 0;
+
+        span {
+            color: #155724;
+            font-size: .75rem;
+        }
+
+        @media (max-width: 599px) {
+            margin: .5rem .5rem 1rem;
+        }
+    }
+
+    .btn-danger {
+        margin: 0 auto .5rem;
+    }
+
+    /* Breakpoints */
+    /* Mobile */
+    @media (max-width: 599px) {
+        /* improve by handling via js */
+        .menu {
+            display: none;
+        }
+
+        .hero-section img {
+            object-fit: cover;
+        }
+    }
+
+    /* Tablet, adjust as necessary */
+    @media(min-width: 600px) {
+        .burger-menu {
+            display: none;
+        }
+    }
+
+    /* Desktop */
+    @media (min-width: 992px) {
+        .burger-menu {
+            display: none;
+        }
+
+        .hero-section img {
+            width: 100%;
+            height: 200px;
+        }
+    }
+</style>
+

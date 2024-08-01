@@ -1,0 +1,210 @@
+body {
+  font-size: 1rem;
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333333;
+  font-size: 1em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-link {
+  font-size: 12px;
+  color: #1155CC;
+  text-decoration: none;
+}
+
+.btn-danger {
+  border: none;
+  border-radius: 4px;
+  height: 36px;
+  width: 90px;
+  color: #FFFFFF;
+  background-color: #E3007F;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .btn-danger {
+    height: 42px;
+    width: 120px;
+  }
+}
+
+/*
+* Replicate framework-like
+*/
+/* General container for input field */
+.input-group {
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Style for the label */
+.input-group label {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #333333;
+}
+
+/* Style for the input field */
+.input-group input[type=text],
+.input-group input[type=password],
+.input-group textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #FFFFFF;
+  background-clip: padding-box;
+  border: 1px solid #AAAAAA;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Placeholder color */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #6c757d;
+  opacity: 1; /* Override Firefox opacity */
+}
+
+.field-container {
+  padding: 0.5rem 0;
+}
+
+/*
+ * VIEWS
+*/
+#app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: "header" "hero" "main-content" "footer";
+  width: 100%;
+  height: 100vh;
+}
+
+/* HEADER */
+header {
+  grid-area: header;
+  background-color: #FFF000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+@media (min-width: 992px) {
+  header {
+    padding: 0 6.25rem;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  text-decoration: none;
+  color: #333333;
+  padding: 0 1.125rem;
+}
+.menu a.active {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  height: 32px;
+  /* width: 48px; */
+}
+
+/* HERO */
+.hero-section {
+  grid-area: hero;
+  position: relative; /* Establish a stacking context */
+}
+.hero-section .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  padding: 12px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px #333333;
+}
+@media (min-width: 992px) {
+  .hero-section .overlay-text {
+    font-size: 2.875rem;
+  }
+}
+
+/* MAIN CONTENT */
+#main-content {
+  grid-area: main-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+/* BOX */
+.box {
+  width: 272px;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+@media (min-width: 992px) {
+  .box {
+    width: 328px;
+    padding: 1rem 1.875rem;
+  }
+}
+
+/* FOOTER */
+.footer {
+  grid-area: footer;
+  background-color: #FFF000;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+@media (min-width: 992px) {
+  .footer {
+    padding: 0 6.25rem;
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
+
+body {
+  font-size: 1rem;
+}

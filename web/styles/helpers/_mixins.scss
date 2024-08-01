@@ -1,0 +1,49 @@
+// Define breakpoints
+$mobile: 0px;
+$tablet: 600px;
+$desktop: 992px;
+$wide-screen: 1200px;
+
+// Mixin for mobile (default)
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+// Mixin for tablets
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+// Mixin for desktops
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+// Mixin for wide screens
+@mixin wide-screen {
+  @media (min-width: $wide-screen) {
+    @content;
+  }
+}
+
+// Usage
+body {
+  font-size: 1rem;
+  // mobile
+
+  @include tablet {
+    // style here
+  }
+
+  @include desktop {
+  }
+
+  @include wide-screen {
+  }
+}
