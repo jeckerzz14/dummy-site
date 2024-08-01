@@ -1,5 +1,5 @@
 # dummy-site
-Dummy site made from `scratch` with core Node JS, native CSS &amp; Vanilla JS
+Dummy site made from `scratch` with Node JS, native HTML/CSS &amp; Vanilla JavaScript
 
 # to run the app:
 - in `api` folder, create .env file (see .env.default for reference)
